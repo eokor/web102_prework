@@ -5,6 +5,29 @@ body {
     background-color: #758190;
 }
 
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+  
+.navbar a {
+    float: right;
+    display: block;
+    color: #ffffff;
+    font-size: x-large;
+    text-align: center;
+    padding: 15px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+  
+.navbar a:hover {
+    color: black;
+}
+
 #tentacles {
     width: 50px;
 }
@@ -21,6 +44,11 @@ body {
 
 .stats-container {
     display: flex;
+    cursor: pointer;
+}
+
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -72,4 +100,8 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
 }
